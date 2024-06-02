@@ -16,9 +16,11 @@ You need to use `app = Lanes()` to instantiate the Lanes class.(You don't have t
 
 ##### 2. run() - Run your code
 Args: Host - host IP address(default: 127.0.0.1)
+<br/>
       Port - Open ports(default: 5550)
+<br/>
       max_listen - Maximum number of connections(default: 50)
-
+<br/>
 Example:
 
     from Lanes import Lanes
@@ -34,3 +36,6 @@ Example:
 
 ##### 3. re_template() render text files such as HTML files.(The following uses HTML as a text file by default.)
 Args: file_name - the name of text files
+<br/>
+      kwargs - Pass in the parameters, which are the key and value of the HTML template variables.
+<br/>
