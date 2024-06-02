@@ -1,3 +1,5 @@
+En: 
+<a href="https://github.com/SeaMite43981045/Lanes/blob/main/README_en.md"/>
 # 这是一个什么项目？
 Lanes是一个Python web框架，可用于Python web开发
 
