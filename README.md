@@ -81,3 +81,55 @@ app.py:
 渲染后：
 
 <h1>The kay is value</h1>
+
+##### 4. redirect 网页重定向
+传入的参数: target - 目标url
+示例：
+
+    from Lanes import Lanes, redirect
+
+    app = Lanes()
+    
+    @app.route("/")
+    def index():
+        return 'hello world!'
+
+    @app.route("/redirect)
+    def redirect():
+        redirect("/")
+
+##### 5. route 添加路由
+传入的参数: url - 路由
+           method: list - 允许的方法(Get, Post, Delete, Put...)
+示例：
+
+    from Lanes import Lanes
+
+    app = Lanes()
+
+    @app.route("/")
+    def index():
+        return 'Hello World!'
+
+    if __name__ == "__main__":
+        app.run()
+
+### Request类
+##### 7. Request.args 获取返回的参数
+返回类型：dict
+示例：
+访问的url: `127.0.0.1:5550/?key1=value1&key2=value2`
+app.py:
+
+    from Lanes import Lanes, Request
+
+    app = Lanes()
+
+    @app.route("/")
+    def index():
+        print(Request.args())
+        return 'Hello World!'
+
+    if __name__ == "__main__":
+        app.run()
+输出：`{'key1': 'value1', 'key2':'value2'}`
