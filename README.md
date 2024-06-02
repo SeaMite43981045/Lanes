@@ -30,7 +30,7 @@ Lanes是一个Python web框架，可用于Python web开发
     if __name__ == "__main__":
         app.run()
 
-##### 3. re_template() 返回HTML等文本文件的内容(以下默认以HTML为文本文件)
+##### 3. re_template() 渲染HTML等文本文件(以下默认以HTML为文本文件)
 传入的参数: file_name - 文件名，默认寻找 \templates 目录下的file_name
            kwargs - 传入参数，作为HTML模板变量的 key 和 value
 示例：
